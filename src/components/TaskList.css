@@ -1,23 +1,29 @@
 .task-list {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-height: 200px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  min-height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
 .task-list.empty {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 }
 
 .empty-message {
-  color: #999;
-  font-size: 1.1rem;
+  color: #94a3b8;
+  font-size: 1.125rem;
   text-align: center;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
